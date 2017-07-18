@@ -9,6 +9,7 @@
 .wafpickle-*
 config.gypi
 CVS
+yarn-error.log
 npm-debug.log
 build
 config
