@@ -1,10 +1,14 @@
 {
   "name": "vue2-ios-picker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "iOS style picker component for vue2.0",
   "author": "Cheiron Zhang <cheironde@gmail.com>",
   "license": "MIT",
-  "keywords": ["picker", "ios-picker", "vue2"],
+  "keywords": [
+    "picker",
+    "ios-picker",
+    "vue2"
+  ],
   "bugs": {
     "url": "https://github.com/cheiron1990/vue2-ios-picker/issues"
   },
