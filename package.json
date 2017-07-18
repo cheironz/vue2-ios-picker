@@ -3,6 +3,11 @@
   "version": "1.0.1",
   "description": "iOS style picker component for vue2.0",
   "author": "Cheiron Zhang <cheironde@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheiron1990/vue2-ios-picker/issues"
+  },
+  "homepage": "https://github.com/cheiron1990/vue2-ios-picker",
   "main": "src/components/picker/index.js",
   "scripts": {
     "dev": "node build/dev-server.js",
