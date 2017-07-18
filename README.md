@@ -34,6 +34,22 @@ items: [
 selectedIndex: [0, 2, 3] // index of default select, default: [0, 0, 0]
 ```
 
+## Event
+``` javascript
+change // column stop scroll. params: column index, item index of this column
+select // click confirm button. params: value array of all column, index array of all column
+cancel // user close picker
+value-change // click confirm button and this value is different from the previous one. params: value array of all column, index array of all column
+```
+
+## Methods
+
+``` javascript
+show(next) // next a function, callback after showing picker. NOT require
+hide() // close picker
+scrollColumn(index, dist) // index is the index of target column, dist is the index of item you want to scroll to.
+```
+
 ## Demo
 
 ``` bash
