@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <picker 
-      theme-color="#0BBE06" 
-      :items="pickerItems" 
+    <picker
+      theme-color="#0BBE06"
+      :items="pickerItems"
       :selected-index="[0, 3, 2]"
-      ref="picker" 
-      @change="change" 
-      @select="select" 
-      @cancel="cancel" 
+      ref="picker"
+      @change="change"
+      @select="select"
+      @cancel="cancel"
       @value-change="valueChange"></picker>
     <button @click="test">test</button>
     <p>{{result}}</p>

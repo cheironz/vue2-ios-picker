@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-ios-picker" @touchmove.prevent="">
+  <div class="vue-ios-picker">
     <div class="picker-mask" :class="{'show': display}" @click="cancelHandler"></div>
     <div class="picker-panel" :class="{'show': display}">
       <div class="picker-choose">
@@ -11,14 +11,14 @@
         <div class="mask-top border-1px"></div>
         <div class="mask-bottom border-1px"></div>
         <div class="wheel-wrapper wheel-wrapper-hook">
-          <picker-item 
-            v-for="(column, index) in items" 
-            :key="index" 
-            :index="index" 
+          <picker-item
+            v-for="(column, index) in items"
+            :key="index"
+            :index="index"
             :selected-index="selected.index[index]"
-            :items="column" 
-            @change="columnChange" 
-            ref="pickerItem" 
+            :items="column"
+            @change="columnChange"
+            ref="pickerItem"
           ></picker-item>
         </div>
       </div>
@@ -325,13 +325,13 @@
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
     .border-1px {
       &::after, &::before {
-        -webkit-transform: scaleY(.7);
-        -webkit-transform-origin: 0 0;
+        transform: scaleY(.7);
+        transform-origin: 0 0;
         transform: scaleY(.7);
       }
 
       &::after {
-        -webkit-transform-origin: left bottom
+        transform-origin: left bottom
       }
     }
   }

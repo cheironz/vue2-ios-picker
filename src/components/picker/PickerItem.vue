@@ -1,7 +1,7 @@
 <template>
   <div class="wheel wheel-hook">
     <ul class="wheel-scroll wheel-scroll-hook">
-        <li class="wheel-item" v-for="(item, index) in items" :data-val="item.value">{{item.text}}</li>
+        <li class="wheel-item" v-for="item in items" :key="item.value" :data-val="item.value">{{item.text}}</li>
     </ul>
   </div>
 </template>
