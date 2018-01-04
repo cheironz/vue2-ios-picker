@@ -47,7 +47,7 @@
           if (oldData.length) {
             let oldValue = oldData[selectedIndex].value
             for (let i = 0; i < this.items.length; i++) {
-              if (this.items[i].value === oldValue) {
+              if (this.items[i] && this.items[i].value === oldValue) {
                 dist = i
                 break
               }
